@@ -5,3 +5,10 @@
  */
 
 #include "nrf54h20dk_nrf54h20_cpuapp_common.dtsi"
+
+
+&gpiote130 {
+	status = "okay";
+	owned-channels = < 0x0 0x1 0x2 0x3 0x4 0x5 0x6 >;
+	//interrupts = <104 NRF_DEFAULT_IRQ_PRIORITY>;
+};
