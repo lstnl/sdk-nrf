@@ -4,20 +4,16 @@
  * SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
  */
 
-&cpuapp_data {
-	reg = <0x2f000000 0x40000>;
-};
-
 / {
 	aliases {
-		watchdog0 = &cpuapp_gswdt;
+		watchdog0 = &cpurad_gswdt;
 	};
 };
 
-&cpuapp_gswdt {
+&cpurad_gswdt {
 	status = "okay";
 };
 
-&cpuapp_cpusys_gswdt_mbox {
+&cpurad_cpusys_gswdt_mbox {
 	status = "okay";
 };
